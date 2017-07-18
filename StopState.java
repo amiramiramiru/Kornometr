@@ -6,6 +6,14 @@ package com.example.amirh.kornometr;
 
 public class StopState extends StateKornometr
 {
+    public StopState(IKornometr k)
+    {
+        setKornometr(k);
+        k.setStopEnabled(false);
+        k.setPauseEnabled(false);
+        k.setStartEnabled(true);
+    }
+
     @Override
     public void start()
     {

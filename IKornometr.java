@@ -13,4 +13,6 @@ public interface IKornometr
     public void setPauseEnabled(boolean pauseEnabled);
 
     public void setStopEnabled(boolean stopEnabled);
+
+    public void setTime(String time);
 }
