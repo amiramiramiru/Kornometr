@@ -6,11 +6,24 @@ package com.example.amirh.kornometr;
 
 public abstract class StateKornometr
 {
+
+	public void setSeconds(int seconds)
+	{
+		this.seconds = seconds;
+	}
+
+	public int getSeconds()
+	{
+		return seconds;
+	}
     public abstract void start();
     public abstract void stop();
-    public abstract void pause();
+    public abstract void reset();
 
     private IKornometr kornometr;
+	private int seconds
+	
+	
 
     public IKornometr getKornometr()
     {
